@@ -23,8 +23,6 @@ The focus of this repository is the **model itself**: how the raw Excel tables w
 13. [Step 9 – Row-Level Security](#step-9--row-level-security-rls)
 14. [DAX Measures](#-dax-used)
 15. [Key Learnings](#-key-learnings)
-16. [Repository Structure](#-repository-structure)
-17. [Author](#-author)
 
 ---
 
