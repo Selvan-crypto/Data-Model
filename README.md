@@ -277,8 +277,6 @@ CALCULATE (
 )
 ```
 
-![USERELATIONSHIP measure](images/userelationship_dax.png)
-
 **Result:** one geography table serves two analyses – by *billing city* (default) and by *treatment city* (via the measure) – without duplicating `dim_geo`.
 
 ---
@@ -332,8 +330,6 @@ LOOKUPVALUE (
     USERPRINCIPALNAME ()
 )
 ```
-
-![RLS roles](images/rls_manage_roles.png)
 
 Because `dim_geo` filters `fact_visit`, the restriction flows through to the visit data.
 
