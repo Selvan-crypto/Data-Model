@@ -384,6 +384,6 @@ Because `dim_geo` filters `fact_visit`, the restriction flows through to the vis
 
 ## 👤 Author
 **<Your Name>**
-🔗 LinkedIn: <your-link> | 📧 <your-email>
+🔗 LinkedIn: <https://www.linkedin.com/in/nainor-selvan-711b1b310/?isSelfProfile=true> | 📧 <your-email>
 
 ⭐ If you found this project useful, please give the repository a star!
