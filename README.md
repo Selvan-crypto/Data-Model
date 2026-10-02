@@ -3,7 +3,7 @@
 A end-to-end **data modelling project in Power BI** built on a hospital dataset (patients, visits, services, invoices, payments, referrals and health campaigns).
 The focus of this repository is the **model itself**: how the raw Excel tables were cleaned in Power Query, reshaped into a **star schema**, and connected with the right relationships (active/inactive, single/both direction, bridge tables) so that reports are accurate and fast.
 
-![Overall data model](images/model_view.png)
+![Overall data model](https://github.com/Selvan-crypto/Data-Model/blob/main/image/model_view.png)
 
 ---
 
