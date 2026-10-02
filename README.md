@@ -7,7 +7,7 @@ The focus of this repository is the **model itself**: how the raw Excel tables w
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Tools & Skills Used](#-tools--skills-used)
 3. [Source Data](#-source-data)
@@ -28,7 +28,7 @@ The focus of this repository is the **model itself**: how the raw Excel tables w
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 | | |
 |---|---|
@@ -54,7 +54,7 @@ The focus of this repository is the **model itself**: how the raw Excel tables w
 
 ---
 
-## 📂 Source Data
+##  Source Data
 All tables were loaded from a single Excel workbook (`hospital_raw_tables.xlsx`), one sheet per table.
 
 | Source sheet | Used for |
@@ -72,7 +72,7 @@ All tables were loaded from a single Excel workbook (`hospital_raw_tables.xlsx`)
 
 ---
 
-## 🔄 Data Modelling Workflow (Start to End)
+##  Data Modelling Workflow (Start to End)
 
 ```
 Raw Excel sheets
@@ -331,7 +331,7 @@ Because `dim_geo` filters `fact_visit`, the restriction flows through to the vis
 
 ---
 
-## 🧮 DAX Used
+##  DAX Used
 
 | Name | Type | Formula | Purpose |
 |---|---|---|---|
@@ -341,7 +341,7 @@ Because `dim_geo` filters `fact_visit`, the restriction flows through to the vis
 
 ---
 
-## 💡 Key Learnings
+##  Key Learnings
 - Cleaning in **Power Query before modelling** (types, blanks, duplicates, trimming) prevents broken joins and wrong totals.
 - **Merges** flatten normalised data; **appends** combine same-structure tables across periods.
 - A **star schema with surrogate keys** keeps facts lean and relationships fast.
@@ -349,26 +349,5 @@ Because `dim_geo` filters `fact_visit`, the restriction flows through to the vis
 - Only **one relationship can be active** between two tables, so role-playing dimensions need an **inactive relationship + `USERELATIONSHIP`**.
 - **Bridge tables** convert many-to-many relationships into two clean one-to-many relationships.
 - **Row-Level Security** with `USERPRINCIPALNAME()` and a mapping table gives secure, per-user views from one report.
-
----
-
-## 📁 Repository Structure
-
-```
-├── README.md
-├── Hospital_Data_Model.pbix            # Power BI model file
-├── dataset/
-│   └── hospital_raw_tables.xlsx       # Source data
-│   ├── dim_patient.m
-│   ├── dim_service.m
-│   └── ...
-└── images/
-    ├── model_view.png
-    ├── relationships_1.png
-    ├── relationships_2.png
-    ├── userelationship_dax.png
-    ├── rls_manage_roles.png
-    └── dim_date_calendarauto.png
-```
 
 ---
