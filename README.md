@@ -214,14 +214,10 @@ dim_date = CALENDARAUTO()
 ```
 Then `Year` and `Month` columns were added. It was marked as the date table and used to connect all date columns of the facts.
 
-![dim_date](images/dim_date_calendarauto.png)
-
 ---
 
 ## Step 6 – Relationships
 
-![Manage relationships 1](images/relationships_1.png)
-![Manage relationships 2](images/relationships_2.png)
 
 | # | From (Many side) | To (One side) | Cardinality | Cross-filter | Status |
 |---|---|---|---|---|---|
@@ -376,9 +372,3 @@ Because `dim_geo` filters `fact_visit`, the restriction flows through to the vis
 ```
 
 ---
-
-## 👤 Author
-**<Your Name>**
-🔗 LinkedIn: <https://www.linkedin.com/in/nainor-selvan-711b1b310/?isSelfProfile=true> | 📧 <your-email>
-
-⭐ If you found this project useful, please give the repository a star!
