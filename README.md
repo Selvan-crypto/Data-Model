@@ -367,7 +367,6 @@ Because `dim_geo` filters `fact_visit`, the restriction flows through to the vis
 ├── hospital_analytics.pbix            # Power BI model file
 ├── dataset/
 │   └── hospital_raw_tables.xlsx       # Source data
-├── power_query/                       # M code of each query (optional)
 │   ├── dim_patient.m
 │   ├── dim_service.m
 │   └── ...
